@@ -3,7 +3,9 @@
     ViewBag.Title = "NumbersAPI";
 }
 
-<h2>NumbersAPI</h2>
+<h2>Random Fact!</h2>
 
-@ViewBag.Fact
+On @ViewBag.Month / @ViewBag.Day : @ViewBag.Fact<br />
+
+@Html.ActionLink("Try Again", "Index", "Home")
 

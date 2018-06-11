@@ -14,13 +14,8 @@ namespace BonusAPILab.Controllers
         public ActionResult Index()
         {
             return View();
-        }
-                
-
-        public ActionResult DayAndMonth()
-        {
-            return View();
-        }
+        }              
+               
 
         public ActionResult NumbersAPI(int day, int month)
         {                       
@@ -63,8 +58,9 @@ namespace BonusAPILab.Controllers
                 ViewBag.Error = "JSON Issue";
                 ViewBag.ErrorDescription = e.Message;
                 return View();
-            }                    
-          
+            }
+            ViewBag.Day = day;
+            ViewBag.Month = month;
                 return View();
             
 
